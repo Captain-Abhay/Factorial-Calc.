@@ -1,0 +1,1 @@
+# Made using Reduce method as well as for loop.
