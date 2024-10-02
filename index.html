@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial of a number using JS</title>
+</head>
+<body>
+    <script>
+
+        // Write a program to calculate factorial of a number using reduce once and using for loop once
+
+        // // For loop
+        // let a = prompt("Enter the number you need a factorial of");
+        // let factorial = 1;
+        // for(i = 2; i <= a; i++){
+        //     factorial = factorial * i; 
+        // }
+        // alert(`The factorial of the number is: ${factorial}`);
+            
+        // using reduce
+            
+        let a = prompt("Enter the number you need a factorial of");
+        // Converts the number into an integer
+        a = parseInt(a);
+        let arr = [];
+        for(i = 0; i < a; i++){
+            arr.push(i+1);
+        }
+        const factorial = (a,b) =>{
+            return a*b;
+        }
+        alert(`The Factorial of the number is: ${arr.reduce(factorial)}`);
+
+
+
+    </script>
+</body>
+</html>
